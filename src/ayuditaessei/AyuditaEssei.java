@@ -207,6 +207,8 @@ public class AyuditaEssei {
                         for (int j = 0; j < size; j++) {
                             if ( i + j  == 4 || i + j  == 8 ||  i + j  == 12 ||  i + j  == 16 ||  i + j  == 20
                                     || i + j  == 24 || i + j  == 28 || i + j  == 32 || i + j  == 36 || i + j  == 39 ) {
+                                
+                                //Cada suma es igual a cada intervalo indicado en la figura todo es escontrar las sumas de cada linea 
                                 System.out.print("*");
                             } else {
                                 System.out.print(" ");
