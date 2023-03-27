@@ -203,27 +203,39 @@ public class AyuditaEssei {
                     break;
 //------------------------------------------------------------------------------
                 case 13:
-                    for (int i = 0; i < size; i++) {
+                    
+                        break;
+//------------------------------------------------------------------------------
+                        
+            case 14:
+                   for (int i = 0; i < size; i++) {
                         for (int j = 0; j < size; j++) {
-                            if (j % 4 == 0) {
-                                if(i + j == size - 1){
-                                System.out.print("*");
-                                }
-                            } else {
+                            if (i == size / 2 && j == 5 || i == size / 2 && j == size - 6 || j == size / 2 && i == 5 || j == size / 2 && i == size - 6 
+                                    || j == 6 && i == 8 || j == 6 && i == 9 ||  j == 6 && i == 11 ||  j == 6 && i == 12
+                                    || j == size - 7 && i == 8 || j == size - 7  && i == 9 ||  j == size - 7  && i == 11 ||  j == size - 7  && i == 12
+                                    || j == 7 && i == 7 ||  j == 7 && i == 13 || j == size - 8 && i == 7 ||  j == size - 8 && i == 13 
+                                    || j == 8 && i == 6 || j == 9 && i == 6 || j == 11 && i == 6 || j == 12 && i == 6
+                                    || j == 8 && i == size - 7 || j == 9 && i == size - 7 || j == 11 && i == size - 7 || j == 12 && i == size - 7) {
+ 
+                                //Todos los extremos
+                                //Todas las lineas verticales left 
+                                //Todas las lineas verticales right
+                                //Todos los puntos extra left
+                                //Todos los puntos extra right
+                                //Todas las lineas horizontal left 
+                                //Todas las lineas horizontal right
+                                
                                 System.out.print(" ");
+                            } else {
+                                System.out.print("*");
                             }
                         }
                         System.out.println();
                     }
-
-                    break;
-//------------------------------------------------------------------------------
-                case 14:
                     break;
 //------------------------------------------------------------------------------
             }
-            
-        } while (op
-                != 0);
+
+        } while (op != 0);
+        }
     }
-}
